@@ -1,0 +1,99 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure the page expands as needed */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Page Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+/* Blog Banner Section */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Make it responsive */
+    max-width: 650px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Blog Banner Input */
+.blogBanner {
+    width: 100%;
+    height: 250px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Label for Blog Banner */
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Blog Writing Area */
+.blogWrite {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Button for Submission */
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background: darkgreen;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        width: 95%; /* Make it more adaptive for smaller screens */
+    }
+    .blogBanner {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+    .blogWrite {
+        height: 150px; /* Adjust textarea size */
+    }
+}
